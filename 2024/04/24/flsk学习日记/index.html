@@ -16,15 +16,15 @@
   <meta name="author" content="zhiwuzhu">
   <meta name="keywords" content="">
   
-    <meta name="description" content="flask知识点 Flask 是一个用 Python 编写的轻量级 Web 应用框架。以下是 Flask 的一些关键知识点，以 Markdown 格式呈现： 123456# Flask 知识点概览Flask 是一个用 Python 编写的轻量级 Web 应用框架。它被设计为易于使用和扩展，是快速开发 Web 应用的不错选择。## 安装 Flask&#96;&#96;&#96;bashpip install Flask">
+    <meta name="description" content="Flask 是一个用 Python 编写的轻量级 Web 应用框架，它被设计为易于使用和扩展，是快速开发 Web 应用的不错选择。 安装 Flask使用pip直接安装 1pip install Flask  创建一个基本的 Flask 应用123456789from flask import Flaskapp &#x3D; Flask(__name__)@app.route(&#x27;&#x2F;&#x27;)de">
 <meta property="og:type" content="article">
 <meta property="og:title" content="flsk学习日记">
 <meta property="og:url" content="http://example.com/2024/04/24/flsk%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0/index.html">
 <meta property="og:site_name" content="浮梦">
-<meta property="og:description" content="flask知识点 Flask 是一个用 Python 编写的轻量级 Web 应用框架。以下是 Flask 的一些关键知识点，以 Markdown 格式呈现： 123456# Flask 知识点概览Flask 是一个用 Python 编写的轻量级 Web 应用框架。它被设计为易于使用和扩展，是快速开发 Web 应用的不错选择。## 安装 Flask&#96;&#96;&#96;bashpip install Flask">
+<meta property="og:description" content="Flask 是一个用 Python 编写的轻量级 Web 应用框架，它被设计为易于使用和扩展，是快速开发 Web 应用的不错选择。 安装 Flask使用pip直接安装 1pip install Flask  创建一个基本的 Flask 应用123456789from flask import Flaskapp &#x3D; Flask(__name__)@app.route(&#x27;&#x2F;&#x27;)de">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-04-24T09:49:29.000Z">
-<meta property="article:modified_time" content="2024-04-24T09:53:03.418Z">
+<meta property="article:modified_time" content="2024-04-24T09:58:05.391Z">
 <meta property="article:author" content="zhiwuzhu">
 <meta property="article:tag" content="自学">
 <meta name="twitter:card" content="summary_large_image">
@@ -249,7 +249,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          609 字
+          536 字
         
       </span>
     
@@ -260,7 +260,7 @@
         
         
         
-          6 分钟
+          5 分钟
         
       </span>
     
@@ -310,9 +310,9 @@
             
               <div class="markdown-body">
                 
-                <p>flask知识点</p>
-<p>Flask 是一个用 Python 编写的轻量级 Web 应用框架。以下是 Flask 的一些关键知识点，以 Markdown 格式呈现：</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-section"># Flask 知识点概览</span><br>Flask 是一个用 Python 编写的轻量级 Web 应用框架。它被设计为易于使用和扩展，是快速开发 Web 应用的不错选择。<br><br><span class="hljs-section">## 安装 Flask</span><br><span class="hljs-code">```bash</span><br><span class="hljs-code">pip install Flask</span><br></code></pre></td></tr></table></figure>
+                <p>Flask 是一个用 Python 编写的轻量级 Web 应用框架，它被设计为易于使用和扩展，是快速开发 Web 应用的不错选择。</p>
+<h2 id="安装-Flask"><a href="#安装-Flask" class="headerlink" title="安装 Flask"></a>安装 Flask</h2><p>使用pip直接安装</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">pip install Flask<br></code></pre></td></tr></table></figure>
 
 <h2 id="创建一个基本的-Flask-应用"><a href="#创建一个基本的-Flask-应用" class="headerlink" title="创建一个基本的 Flask 应用"></a>创建一个基本的 Flask 应用</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> flask <span class="hljs-keyword">import</span> Flask<br>app = Flask(__name__)<br><br><span class="hljs-meta">@app.route(<span class="hljs-params"><span class="hljs-string">&#x27;/&#x27;</span></span>)</span><br><span class="hljs-keyword">def</span> <span class="hljs-title function_">hello_world</span>():<br>    <span class="hljs-keyword">return</span> <span class="hljs-string">&#x27;Hello, World!&#x27;</span><br><br><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&#x27;__main__&#x27;</span>:<br>    app.run(debug=<span class="hljs-literal">True</span>)<br></code></pre></td></tr></table></figure>
 
@@ -343,9 +343,6 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&#x27;__main__&#x27;</span>:<br>    app.run(debug=<span class="hljs-literal">True</span>)<br></code></pre></td></tr></table></figure>
 
 <p>以上是 Flask 的一些基本知识点，通过这些知识点，你可以开始构建自己的 Web 应用。</p>
-<pre><code class="hljs">
-请注意，这些代码和命令仅供示例，实际使用时需要根据你的具体需求和环境进行调整。
-</code></pre>
 
                 
               </div>
